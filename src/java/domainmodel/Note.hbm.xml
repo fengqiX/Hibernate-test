@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 22, 2018 5:18:50 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="domainmodel.Note" table="note" catalog="notesdb" optimistic-lock="version">
+        <id name="noteid" type="java.lang.Integer">
+            <column name="noteid" />
+            <generator class="identity" />
+        </id>
+        <property name="dateCreated" type="date">
+            <column name="dateCreated" length="10" />
+        </property>
+        <property name="contents" type="string">
+            <column name="contents" length="1000" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
