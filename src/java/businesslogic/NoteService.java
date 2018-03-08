@@ -52,7 +52,7 @@ public class NoteService {
         java.util.Date utilDate = new java.util.Date();
         java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
         
-        Note note = new Note(0,utilDate,contents);
+        Note note = new Note(utilDate,contents);
          
          return ndb.insert(note);
     }

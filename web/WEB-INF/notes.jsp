@@ -31,7 +31,7 @@
                     </td>
                     <td>
                         <form action="Note" method="get">
-                            <input type="submit" value="Edit">
+                            <input type="submit" value="View">
                             <input type="hidden" name="action" value="view">
                             <input type="hidden" name="selectedNoteId" value="${note.noteid}">
                         </form>

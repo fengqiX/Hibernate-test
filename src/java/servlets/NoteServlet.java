@@ -92,10 +92,9 @@ public class NoteServlet extends HttpServlet {
         } catch (NotesDBException ex) {
             Logger.getLogger(NoteServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
-       if(notesList==null) notesList=new ArrayList<Note>();
+       if(notesList==null) notesList=new ArrayList<>();
        String url = "/WEB-INF/notes.jsp";
        
-      // req.setAttribute("notesList", notesList);
        req.setAttribute("notesList", notesList);
        
        if(action!=null && action.equals("view"))

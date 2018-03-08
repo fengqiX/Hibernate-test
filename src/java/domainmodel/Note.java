@@ -21,8 +21,8 @@ public class Note  implements java.io.Serializable {
     public Note(String contents) {
         this.contents = contents;
     }
-    public Note(Integer noteid, Date dateCreated, String contents) {
-       this.noteid = noteid;
+    public Note(Date dateCreated, String contents) {
+       
        this.dateCreated = dateCreated;
        this.contents = contents;
     }
